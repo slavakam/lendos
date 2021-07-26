@@ -1,0 +1,115 @@
+.description {
+  max-width: 1200px;
+  margin: auto;
+  padding: 100px 110px;
+}
+
+.block {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 100px;
+
+  &:last-child { margin-bottom: 0; }
+}
+
+.text-block {
+  margin-top: 120px;
+  max-width: 480px;
+
+  h2 {
+    font-family: 'Roboto Condensed';
+    font-weight: 700;
+    font-size: 55px;
+    line-height: 61px;
+    letter-spacing: 0.04em;
+    margin: 0;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+  }
+
+  ul {
+    list-style: none;
+    padding-left: 18px;
+  }
+  
+  ul li::before {
+    content: "\25CF";
+    color: #00CA83;
+    font-weight: bold;
+    display: inline-block;
+    width: 18px;
+    margin-left: -18px;
+  }
+
+  p, li {
+    font-size: 18px;
+    line-height: 29px;
+    color: rgba(30,31,31,0.75);
+  }
+}
+
+.phone-container {
+  position: relative;
+  width: 522px;
+  height: 586px;
+}
+
+.circles {
+  background-image: url(./images/circles.png);
+  width: 522px;
+  height: 522px;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.phone1,
+.phone2 {
+  z-index: 1;
+  width: 275px;
+  height: 586px;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.phone1 { background-image: url(./images/phone1.png); }
+.phone2 { background-image: url(./images/phone2.png); }
+
+@media screen and (max-width: 1279px) {
+  .description {
+    flex-direction: column;
+    padding: 100px 68px;
+  }
+  .block { flex-direction: column; }
+  .text-block {
+    order: 1;
+    max-width: 100%;
+    margin-top: 0;
+    margin-bottom: 50px;
+  }
+  .phone-container {
+    align-self: center;
+    order: 2;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .description { padding: 50px 16px; }
+
+  .text-block {
+    h2 {
+      font-size: 25px;
+      line-height: 28px;
+    }
+
+    p, ul li {
+      font-size: 16px;
+      line-height: 26px;
+    }
+  }
+}

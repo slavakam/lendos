@@ -1,0 +1,92 @@
+.publications {
+  max-width: 1200px;
+  margin: auto;
+  margin-bottom: 100px;
+  padding: 0 110px;
+
+  h2 {
+    font-family: 'Roboto Condensed';
+    font-weight: 700;
+    font-size: 55px;
+    line-height: 61px;
+    letter-spacing: 0.04em;
+    margin: 0;
+    margin-bottom: 55px;
+    text-transform: uppercase;
+  }
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+
+  &:last-child{ margin-bottom: 0; }
+}
+
+.delo-logo {
+  background-image: url(./images/delo.png);
+  display: block;
+  width: 100px;
+  height: 100px;
+}
+
+.shakhtar-logo {
+  background-image: url(./images/shakhtar.png);
+  display: block;
+  width: 64px;
+  height: 100px;
+}
+
+.unknown-logo {
+  background-image: url(./images/unknown.png);
+  display: block;
+  width: 100px;
+  height: 100px;
+}
+
+.svoi-logo {
+  background-image: url(./images/svoi.png);
+  display: block;
+  width: 184px;
+  height: 100px;
+}
+
+.shotam-logo {
+  background-image: url(./images/shotam.png);
+  display: block;
+  width: 229px;
+  height: 42px;
+}
+
+.khamarachos-logo {
+  background-image: url(./images/khamarachos.png);
+  display: block;
+  width: 211px;
+  height: 78px;
+}
+
+.interfaks-logo {
+  background-image: url(./images/interfaks.png);
+  display: block;
+  width: 417px;
+  height: 66px;
+}
+
+@media screen and (max-width: 1279px) {
+  .publications { padding: 0px 68px; }
+}
+
+@media screen and (max-width: 767px) {
+  .publications {
+    padding: 0px 16px;
+    margin-bottom: 50px;
+
+    h2 {
+      font-size: 25px;
+      line-height: 31px;
+    }
+  }
+}

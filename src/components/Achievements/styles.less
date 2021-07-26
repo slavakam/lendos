@@ -1,0 +1,107 @@
+.achievements {
+  margin: auto;
+  max-width: 1200px;
+  margin-bottom: 120px;
+  padding: 0 110px;
+
+  h2 {
+    font-family: 'Roboto Condensed';
+    font-weight: 700;
+    font-size: 55px;
+    line-height: 61px;
+    letter-spacing: 0.04em;
+    margin: 0;
+    margin-bottom: 55px;
+    text-transform: uppercase;
+  }
+}
+
+.logos {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.line {
+  position: absolute;
+  top: 84px;
+  height: 2px;
+  background-color: #00CA83;
+  right: -30px;
+  left: -30px;
+}
+
+.block {
+  display: flex;
+  flex-direction: column;
+  width: 184px;
+  max-width: 184px;
+}
+
+.year {
+  font-weight: 600;
+  color: #00CA83;
+  background-color: #fff;
+  margin-bottom: 16px;
+  align-self: flex-start;
+  padding: 0 12px;
+  z-index: 1;
+  left: -12px;
+  position: relative;
+}
+
+.image-wrapper {
+  height: 57px;
+  margin-bottom: 18px;
+}
+
+.incubator-logo {
+  background-image: url(./images/1991.png);
+  width: 100px;
+  height: 54px;
+  display: inline-block;
+}
+
+.spa-logo {
+  background-image: url(./images/spa.png);
+  width: 77px;
+  height: 54px;
+  display: inline-block;
+}
+
+.hype-logo {
+  background-image: url(./images/hype.png);
+  width: 171px;
+  height: 57px;
+  display: inline-block;
+}
+
+.tta-logo {
+  background-image: url(./images/tta.png);
+  width: 181px;
+  height: 46px;
+  display: inline-block;
+}
+
+.text {
+  font-size: 16px;
+  line-height: 26px;
+  color: rgba(30, 31, 31, 0.75);
+  margin: 0;
+}
+
+@media screen and (max-width: 1279px) {
+  .achievements { padding: 0 68px; }
+}
+
+@media screen and (max-width: 767px) {
+  .achievements {
+    padding: 0 16px;
+    margin-bottom: 50px;
+
+    h2 {
+      font-size: 25px;
+      line-height: 31px;
+    }
+  }
+}

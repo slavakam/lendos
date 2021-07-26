@@ -1,0 +1,43 @@
+.try-it-now-container { background-color: #1E1F1F; }
+.try-it-now-content {
+  margin: auto;
+  max-width: 1200px;
+  padding: 58px 110px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  h2 {
+    font-family: 'Roboto Condensed';
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 43px;
+    text-transform: uppercase;
+    margin: 0;
+    color: #FCFCFC;
+  }
+}
+
+@media screen and (max-width: 1279px) {
+  .try-it-now-content {
+    padding: 58px 68px;
+    flex-direction: column;
+
+    h2 {
+      align-self: flex-start;
+      margin-bottom: 56px;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .try-it-now-content {
+    padding: 58px 16px;
+
+    h2 {
+      font-size: 25px;
+      line-height: 31px;
+      margin-bottom: 30px;
+    }
+  }
+}

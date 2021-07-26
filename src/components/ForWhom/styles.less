@@ -1,0 +1,116 @@
+.for-whom {
+  max-width: 1200px;
+  margin: auto;
+  padding: 100px 110px;
+
+  h2 {
+    font-family: 'Roboto Condensed';
+    font-weight: 700;
+    font-size: 55px;
+    line-height: 61px;
+    letter-spacing: 0.04em;
+    margin: 0;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+  }
+}
+
+.kinds {
+  display: flex;
+  justify-content: space-between;
+}
+
+.block {
+  width: 276px;
+  position: relative;
+
+  h5 {
+    font-size: 21px;
+    margin: 15px 0;
+    z-index: 1;
+    position: relative;
+  }
+}
+
+.round {
+  background-color: #ecfaf2;
+  width: 225px;
+  height: 225px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 50%;
+}
+
+.ball {
+  background-image: url(./icons/ball.png);
+  width: 123px;
+  height: 123px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.tennis-rockets {
+  background-image: url(./icons/tennis-rockets.png);
+  width: 160px;
+  height: 128px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.people {
+  background-image: url(./icons/people.png);
+  width: 128px;
+  height: 124px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.number {
+  background-color: #00CA83;
+  border-radius: 50%;
+  color: #fff;
+  display: flex;
+  height: 66px;
+  width: 66px;
+  font-size: 21px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+  z-index: 1;
+  position: relative;
+}
+
+.text {
+  z-index: 1;
+  position: relative;
+  font-size: 16px;
+  line-height: 26px;
+  color: rgba(30,31,31,0.75);
+}
+
+@media screen and (max-width: 1279px) {
+  .for-whom { padding: 100px 68px; }
+  .kinds {
+    flex-direction: column;
+    align-items: center;
+  }
+  .block { margin-bottom: 50px; }
+}
+
+@media screen and(max-width: 767px) {
+  .for-whom {
+    padding: 50px 16px;
+
+    h2 {
+      font-size: 25px;
+      line-height: 31px;
+    }
+  }
+}

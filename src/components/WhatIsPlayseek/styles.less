@@ -1,0 +1,64 @@
+.what-is-playseek {
+  margin: 100px auto;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 110px;
+
+  h2 {
+    font-family: 'Roboto Condensed';
+    font-weight: 700;
+    font-size: 55px;
+    line-height: 61px;
+    letter-spacing: 0.04em;
+    margin: 0;
+    text-transform: uppercase;
+    flex-shrink: 0;
+    width: 276px;
+  }
+}
+
+.description {
+  width: 600px;
+  p {
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 18px;
+    line-height: 29px;
+    color: rgba(30,31,31,0.75);
+
+    &:last-child { margin-bottom: 0; }
+  }
+}
+
+@media screen and (max-width: 1279px) {
+  .what-is-playseek {
+    padding: 0 68px;
+    flex-direction: column;
+
+    h2 {
+      width: 100%;
+      margin-bottom: 50px;
+    }
+  }
+
+  .description { width: 100%; }
+}
+
+@media screen and (max-width: 767px) {
+  .what-is-playseek {
+    padding: 0 16px;
+    flex-direction: column;
+    margin: 50px auto;
+
+    h2 {
+      font-size: 25px;
+      line-height: 31px;
+    }
+  }
+
+  .description p {
+    font-size: 16px;
+    line-height: 29px;
+  }
+}
