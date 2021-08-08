@@ -23,8 +23,10 @@
     outline: none;
   }
 
-  .google-play-button { margin-right: 18px; }
-  
+  .google-play-button {
+    margin-right: 18px;
+  }
+
   .play-market-icon {
     background-image: url(./icons/play-market.png);
     width: 30px;
@@ -32,12 +34,20 @@
     display: block;
     margin-right: 16px;
   }
-  
+
   .app-store-icon {
     background-image: url(./icons/app-store.png);
     width: 39px;
     height: 39px;
     display: block;
     margin-right: 16px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .buttons {
+    .google-play-button {
+      margin-right: 10px;
+    }
   }
 }
