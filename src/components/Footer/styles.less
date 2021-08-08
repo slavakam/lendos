@@ -1,4 +1,6 @@
-.footer-container { background-color: #181A1A; }
+.footer-container {
+  background-color: #181A1A;
+}
 
 .footer-content {
   padding: 20px 110px;
@@ -14,12 +16,14 @@
     font-size: 13px;
     line-height: 15px;
     letter-spacing: 0.03em;
-    color: rgba(242,250,247,0.3);
+    color: rgba(242, 250, 247, 0.3);
     text-transform: uppercase;
     flex-shrink: 0;
   }
 
-  a { cursor: pointer; }
+  a {
+    cursor: pointer;
+  }
 }
 
 .logo {
@@ -30,9 +34,17 @@
 }
 
 @media screen and (max-width: 1279px) {
-  .footer-content { padding: 20px 68px; }
+  .footer-content {
+    padding: 20px 68px;
+  }
 }
 
 @media screen and (max-width: 767px) {
-  .footer-content { padding: 20px 16px; }
+  .footer-content {
+    padding: 20px 16px;
+    justify-content: center;
+    a {
+      margin-left: 10px;
+    }
+  }
 }
