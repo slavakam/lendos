@@ -4,7 +4,7 @@ import { initReactI18next } from 'react-i18next';
 import ua from './ua.json';
 import ru from './ru.json';
 
-const DEFAULT_LANGUAGE = 'ru';
+const DEFAULT_LANGUAGE = 'ua';
 
 i18n
   .use(initReactI18next)

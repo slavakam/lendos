@@ -12,10 +12,10 @@ const CooperationComponent = ({ t }) => (
         <span>+380 (93) 460-30-56</span>
         <span>playseek.official@gmail.com</span>
         <div styleName="icons">
-          <a href="https://facebook.com" target="_blank" styleName="facebook">
+          <a href="https://www.facebook.com/playseekapp" target="_blank" styleName="facebook">
             <i styleName="facebook-icon" />
           </a>
-          <a href="https://instagram.com" target="_blank">
+          <a href="https://www.instagram.com/playseekapp/" target="_blank">
             <i styleName="instagram-icon" />
           </a>
         </div>
